@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+   </head>
+   <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<!--FAB Icon-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <body>
+    <!--NavBar-->
+    <nav id="navBar">
+        <a class="logo"><img src="images/LogoWhiteBG.png"></a>
+        
+        <div class="icons">
+          <img src="images/iconSearch.png" class="search">
+          <img src="images/iconMenu.png" class="menu">
+        </div>
+      </nav>
+      <!--NavBar Ends-->
+    
+      <!--Task Collapse-->
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn1 btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Urgent Priority
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Meeting with Team</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - 01:00pm</h6>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Review Lesson Plans</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - 04:00pm</h6>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Set-up for Student Play</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - 05:00pm</h6>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class=" btn2 btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Mid Priority
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Send emails to Parents</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - 10:00am</h6>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Review new school board notices</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - 12:00pm</h6>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Submit Mid-Term grades</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - 03:00pm</h6>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn3 btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Low Priority 
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Send Mrs. Roberts a thank you card</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - End of Day</h6>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Speak with Principal Jones</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - 01:30pm</h6>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 32rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Review and print flash cards for tomorrows test prep activity.</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Today - 03:00pm</h6>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of Task Collapse-->
+      
+     <!--FAB-->
+     
+
+      
+
+      <!--Navigation Bar-->
+      <nav class="nav">
+        <a href="#" class="nav_link navActive">
+            <img src="images/iconDashboard.png" class="navIcon">
+            <h6>Dashboard</h6>
+        </a>
+        <a href="#" class="nav_link">
+            <img src="images/iconTask.png" class="navIcon">
+            <h6>Tasks</h6>
+        </a>
+        <a href="#" class="nav_link">
+            <img src="images/iconChats.png" class="navIcon">
+            <h6>Chats</h6>
+        </a>
+        <a href="#" class="nav_link">
+            <img src="images/iconCalendar.png" class="navIcon">
+            <h6>Calendar</h6>
+        </a>
+      </nav>
+
+
+
+    
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

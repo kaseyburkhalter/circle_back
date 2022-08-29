@@ -3,33 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!--Custom CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
    </head>
+   <!--Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 
    <body>
     <!--NavBar-->
-    <nav class="navBar">
-        <div>
-            <a class="logo" href="#">
-                <img src="images/LogoTransparentBG.png">
-            </a>
+    <nav id="navBar">
+        <a class="logo"><img src="images/LogoWhiteBG.png"></a>
+        
+        <div class="icons">
+          <img src="images/iconSearch.png" class="search">
+          <img src="images/iconMenu.png" class="menu">
         </div>
-        <li class="icons">
-            <img class="search" href="#" src="images/iconSearch.png">
-            <img class="dots" href="#" src="images/iconMenu.png">
-        </li>
       </nav>
       <!--NavBar Ends-->
     
       <!--Stories Div-->
-      <div class="container stories">
+      <div class="containers stories">
         <ul>
             <li>
                 <div class="outer-layer">
                     <a href="#"><img src="images/story1.jpg"></a>
-                    <button>+</button>
+                    <button class="addStory">+</button>
                 </div>
             </li>
             <li>
@@ -54,34 +54,35 @@
       <!--Dashboard Cards-->
       <div class="dashboardGrid">
 
-        <div class="card gridItem">
+        <div class="cards gridItem">
             <img class="card-img-top" src="images/DBcheckIn.png" alt="Card image cap">
             <div class="card-body">
               <h3 class="card-title">Check In</h3>
             </div>
         </div>
 
-        <div class="card gridItem">
+        <div class="cards gridItems">
             <img class="card-img-top" src="images/DBannouncements.png" alt="Card image cap">
             <div class="card-body">
                 <h3 class="card-title">Announcements</h3>
             </div>
         </div>
 
-        <div class="card gridItem">
+        <div class="cards gridItem">
             <img class="card-img-top" src="images/DBstudentCount.png" alt="Card image cap">
             <div class="card-body">
                 <h3 class="card-title">Take Attendance</h3>
             </div>
         </div>
 
-        <div class="card gridItem">
+        <div class="cards gridItem">
             <img class="card-img-top" src="images/DBtimer.png" alt="Card image cap">
             <div class="card-body">
                 <h3 class="card-title">Timer</h3>
             </div>
         </div>
       </div>
+      
       <div class="priorityCard">
         <div class="card-body">
             <h3 class="card-title">Top Priorities</h3>
@@ -91,6 +92,27 @@
             <h6>Today, 10:00 am</h6>
         </div>
       </div>
+      <!--Dashboard Cards End-->
+
+      <!--Navigation Bar-->
+      <nav class="nav">
+        <a href="#" class="nav_link navActive">
+            <img src="images/iconDashboard.png" class="navIcon">
+            <h6>Dashboard</h6>
+        </a>
+        <a href="#" class="nav_link">
+            <img src="images/iconTask.png" class="navIcon">
+            <h6>Tasks</h6>
+        </a>
+        <a href="#" class="nav_link">
+            <img src="images/iconChats.png" class="navIcon">
+            <h6>Chats</h6>
+        </a>
+        <a href="#" class="nav_link">
+            <img src="images/iconCalendar.png" class="navIcon">
+            <h6>Calendar</h6>
+        </a>
+      </nav>
 
 
 

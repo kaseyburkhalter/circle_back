@@ -1,19 +1,22 @@
 .navBar{
     width: 100%;
-    white-space: nowrap;
-    display: inline-block;
-    overflow: hidden;
-    margin-left: 20px;
-}
-.icons{
-    display: inline-block;
-}
-.search{
-    height: 20px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px;
     padding: 10px;
 }
+.icons {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+    height: 25px;
+    margin: 20px;
+  }
+.search{
+    margin-right: 10px;
+}
 .dots{
-    height: 20px;
     padding: 10px;
 }
 
@@ -26,25 +29,25 @@
     justify-content: center;
     align-items: center;
 }
-.container ul{
+.containers ul{
     list-style-type: none;
     display: flex;
 }
-.container ul li a img{
+.containers ul li a img{
     display: flex;
     height: 80px;
     width: 80px;
     border-radius: 100%;
     transition: .6s ease-in-out;
 }
-.container ul li a img:hover{
+.containers ul li a img:hover{
     transform: scale(1.1);
 }
-.container ul li{
+.containers ul li{
     margin-right: 20px;
 
 }
-.container ul li a{
+.containers ul li a{
     display: block;
     background-color: white;
     padding: 4px;
@@ -52,11 +55,11 @@
 }
 .outer-layer{
     position: relative;
-    background: linear-gradient(to bottom right, #02b1e1, #E47415, #02B1E1);
+    background: linear-gradient(to bottom right, #861ce2, #E47415, #02B1E1);
     padding: 4px;
     border-radius: 100%;
 }
-button{
+.addStory button{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -71,7 +74,7 @@ button{
 }
 
 /*Dashboard Cards*/
-.card{
+.cards{
     box-shadow: 10px 1px 5px #10101046;
     height: 150px;
     width: 50%;
@@ -79,6 +82,7 @@ button{
     padding: 35px;
     border-radius: 15px;
     text-align: center;
+    font-family: 'Work Sans', sans-serif;
 }
 .dashboardGrid{
     display: grid;
@@ -91,6 +95,7 @@ button{
     margin: 20px;
     padding: 20px;
     border-radius: 15px;
+    font-family: 'Work Sans', sans-serif;
 
 }
 .priorityCard h6{
@@ -104,3 +109,68 @@ button{
 .priorityCard p{
     line-height: 0.5%;
 }
+/*Dashboard Cards*/
+body{
+    margin: 0 0 120px 0;
+}
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    box-shadow: o o 3px #10101046;
+    background-color: white;
+    display: flex;
+    overflow-x: auto;
+}
+.nav_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    color: #101010;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+.navActive{
+    background-color:#861ce275
+}
+.navIcon{
+    font-size: 18px;
+}
+
+/*FAB*/
+
+
+/*Task Collapse*/
+#accordion{
+    margin-top: 50px;
+}
+#headingOne{
+    background-color: #861ce2;
+    border-radius: 11px;
+}
+#headingTwo{
+    background-color: #861ce275;
+}
+.btn1{
+    color: white;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+.btn2, .btn3{
+    color: black;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+.card{
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: o o 3px #10101046;
+}
+
+  
