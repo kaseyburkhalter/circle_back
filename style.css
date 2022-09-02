@@ -71,6 +71,7 @@
     color: white;
     font-size: 16px;
     border: solid 3px white;
+    font-family: 'Work Sans', sans-serif;
 }
 
 /*Dashboard Cards*/
@@ -109,7 +110,7 @@
 }
 .priorityCard h3{
     text-align: center;
-    color: #861ce2;
+    color: #861ce2; 
     font-weight: bold;
 }
 
